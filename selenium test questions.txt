@@ -1,0 +1,252 @@
+10. What is Automation testing? What are the advantages of Automation Testing?
+
+Automation testing is the process of testing the software using an automation tool to find the defects. In this process, executing the test scripts and generating the results are performed automatically by automation tools. Some most popular tools to do automation testing are HP QTP/UFT, Selenium WebDriver, etc.,
+============================================================================================================================================================
+11. What are the most popular testing tools for functional testing?
+
+Selenium
+QTP(Quick Test Professional) / UFT(Unified Functional Testin
+============================================================================================================================================================
+12. Why do you prefer Selenium Automation Tool?
+
+Free and open source
+Have large user base and helping communities
+Cross-browser compatibility
+Platform compatibility
+Multiple programming languages support
+============================================================================================================================================================
+
+13. What type of test cases do you pick up to automate?
+
+I focus on the test cases which should be executed in a repetitive manner such as regression test cases, smoke and sanity test cases
+============================================================================================================================================================
+14. What type of test cases you won’t pick up to automate?
+
+Before picking up the test cases to automate, I do check whether the application is stable or not. So based on this, I don’t pickup test cases when the AUT changes frequently and the test cases which I run rarely and run only one time. When I do usability and exploratory testing.
+============================================================================================================================================================
+
+how many types of webdriver are available in selenium?
+FirefoxDriver.
+InternetExplorerDriver.
+ChromeDriver.
+SafariDriver.
+OperaDriver.
+AndroidDriver.
+IPhoneDriver.
+HTMLUnitDriver.
+
+============================================================================================================================================================
+16. How you build Object Repository in your project? 
+
+In QTP, there is an Object Repository concept. When a user records a test, the objects and its properties are captured by default in an Object Repository. QTP uses this Object Repository to play back the scripts. Coming to Selenium, there is no default Object Repository concept. It doesn’t mean that there is no Object Repository in Selenium. Even though there is no default one still we could create our own. In Selenium, we call objects as locators (such as ID, Name, Class Name, Tag Name, Link Text, Partial Link Text, XPath, and CSS). Object repository is a collection of objects. One of the ways to create Object Repository is to place all the locators in a separate file (i.e., properties file). But the best way is to use Page Object Model. In the Page Object Model Design Pattern, each web page is represented as a class. All the objects related to a particular page of a web application are stored in a class.
+============================================================================================================================================================
+how to launch batch file in selenium webdriver project
+Steps:
+Right click on Project -> Export -> Runnable jar file.
+Give a name and file path for the jar file.
+Select option - Extract required libraries into generated JAR.
+And Finish.
+============================================================================================================================================================
+how to run selenium webdriver tests from command line?
+Open up a command prompt from Start>cmd.
+Navigate to the directory where you saved your AllInOne. jar file.
+Type the following command to run your script
+============================================================================================================================================================
+6. What is a Framework?
+A framework defines a set of rules or best practices that we can follow in a systematic way to achieve the desired results. There are different types of automation frameworks and the most common ones are:
+
+Data-Driven Testing Framework
+Keyword Driven Testing Framework
+Hybrid Testing Framework
+Behavioural Driven Framework
+============================================================================================================================================================
+
+7. What type of test cases to be automated?
+Types of Test Cases To Automate are
+
+Data-driven test cases
+Test cases with higher complexity
+Test case with many database updates
+The test execution rate is high
+Smoke/Critical tests
+Tests with several combinations
+Graph test cases
+Higher manual execution time
+
+============================================================================================================================================================
+
+8. What type of test cases not to be automated?
+Types of Test Cases Not To Be Automated are
+
+Subjective Validation
+New Functionalities
+Strategic Development
+User Experience
+Complex Functionality
+Quality Control
+Low return on investment
+Installation and setup testing
+============================================================================================================================================================
+
+What are the test types supported by Selenium?
+
+Functional testing: It verifies if each function of a software application performs in accordance with specific requirements. This testing primarily involves black-box testing, and it is not concerned about the source code of the application.
+
+Regression testing: It is nothing but a full or partial selection of the already executed test cases to be re-executed to ensure whether the existing functionalities work fine.
+============================================================================================================================================================
+
+What is XPath?
+XPath is the navigation tool used to locate a web element based on its XML path.
+
+Explain the difference between single slash and double slash in XPath.
+Single slash (/): Single slash is used to create an XPath with an absolute path. In this case, the XPath would start selection from the document’s start node.
+Double slash (//): Double slash is used to create an XPath with a relative path. In this case, the XPath would start selection from anywhere within the document.
+============================================================================================================================================================
+
+What is an exception test in Selenium?
+An exception test is a test that looks forward to an exception to be thrown inside a test class. It anticipates the @Test annotation followed by the expected exception name. For example, @Test(expectedException = NoSuchElementException.class) is an exception test for missing elements in Selenium.
+
+Note: Keep in mind the syntax, where the exception is suffixed with .class.
+============================================================================================================================================================
+
+18. What are the different types of annotations used in Selenium? 
+Test
+Before
+After
+Ignore
+BeforeClass
+AfterClass
+RunWith
+============================================================================================================================================================
+
+What are the four elements that you have to pass in Selenium?
+Four parameters that need to be passed in Selenium are:
+
+Host
+Port number
+Browser
+URL
+
+============================================================================================================================================================
+
+How will you use Selenium to upload a file?
+If the file is on the same machine or in a mapped network drive, it is really straightforward: We have to just type the ‘path’ of the file in the FileUpload control.
+
+Example:
+
+driver = webdriver.Firefox()
+element = driver.find_element_by_id("fileUpload")
+element.send_keys("C:\myfile.txt")
+
+============================================================================================================================================================
+
+What is the difference between getwindowhandles() and getwindowhandle()?
+getwindowhandles(): It is used to get the address of all open browsers, and its return data type is Set<String>.
+getwindowhandle(): It is used to get the address of the current browser where the control is, and its return type is a string data type.
+============================================================================================================================================================
+
+What is Selenese, and what are the three types of Selenese?
+Selenese is a set of commands in Selenium used for running a test.
+
+Three types of Selenese are as follows:
+
+Actions: They are used for performing interactions and operations with the target elements.
+Accessors: They are used for storing values in a variable.
+Assertions: They are used as a checkpoint.
+============================================================================================================================================================
+
+How do you launch the web browser using WebDriver?
+The following syntax can be used to launch the browser corresponding to the system’s operating system:
+
+WebDriver driver = new FirefoxDriver();
+Or
+WebDriver driver = new InternetExplorerDriver();
+Or
+WebDriver driver = new ChromeDriver();
+
+What are the different types of waits available in WebDriver?
+============================================================================================================================================================
+In Selenium, what are breakpoints and start points?
+Breakpoints: Breakpoints are used to stall the execution of the test. The execution will stop whenever a breakpoint is implemented, and this will help us check whether the code is working properly or not.
+
+Start points: Start points are the points from where the execution should begin. Start points can be used when we want to run the test script from the middle of the code or after a breakpoint.
+============================================================================================================================================================
+
+Explain the difference between driver.close() and driver.quit() commands in Selenium.
+The following is the major difference between both commands:
+
+close() command closes the currently active browser window, which is being used by the user or which is currently accessed by the web driver.
+quit() command closes all the windows opened by the program, unlike the driver.close () command.
+Both the commands do not take any value and also do not accept any parameter.
+
+
+What is an Exception?
+Exceptions are events due to which java program ends abruptly without giving expected output. Java provides a framework where a user can handle exceptions.
+
+When an exception occurs, an exception object is created which is technically referred to as ‘Throwing an Exception’ and we add Try/Catch blocks like,
+
+try {
+// Protected code 
+} catch (ExceptionName e) {
+// Catch block 
+}
+
+Though there are many Exception classes under WebDriverException, we commonly see the below ones.
+
+NoSuchElementException-is one of the different WebDriver Exceptions and this Exception occurs, when the locators (i.e. id / xpath/ css selectors etc) we mentioned in the Selenium
+
+NoSuchWindowException
+NoSuchFrameException
+NoAlertPresentException
+InvalidSelectorException
+ElementNotVisibleException
+ElementNotSelectableException
+TimeoutException- TimeOut exception occurs when a command takes longer than the wait time to avoid the ElementNotVisible.
+NoSuchSessionException
+
+StaleElementReferenceException- is one of the different WebDriver Exceptions and this Exception occurs, when the locators (i.e. id / xpath/ css selectors etc) we mentioned in the Selenium
+
+============================================================================================================================================================
+*******************************https://www.softwaretestingmaterial.com/explain-test-automation-framework/**************************
+
+What is Selenium Framework?
+Selenium framework’s code structure helps you to reuse the code, reduce code maintenance, higher code readability, and allows multiple users to work on the same piece of the program.
+
+10. Have you created any Framework?
+If you are a beginner: You can say “No, I didn’t get a chance to create a framework from the scratch. I have used the framework which is already available. My contribution is mostly in creating test cases by using the existing framework.”
+
+Why do we need the Selenium Framework?
+Easy code maintenance
+Increase in code re-usage
+Higher code readability
+Reduced script maintenance cost
+Reduced tests’ time execution
+Reduced human resources
+Easy reporting
+
+9. What are the advantages of the Test Automation Framework?
+Reusability of code.
+Easy reporting.
+Low-cost maintenance.
+Maximum Coverage
+Minimal manual intervention
+
+Types of Test Automation Frameworks:
+Here in this post, I will explain the most popular Types of Selenium Automation Frameworks.
+
+1. Linear Scripting Framework
+2. Modular Testing Framework
+3. Library Architecture Testing Framework
+4. Data-driven Testing Framework
+5. Keyword Driven Testing Framework
+6. Hybrid Testing Framework
+7. Behavior Driven Development Testing Framework
+
+
+Type of Framework: In our project, we are using Data-driven Framework by using Page Object Model design pattern with Page Factory.
+
+POM: As per the Page Object Model, we have maintained a class for every web page. Each web page has a separate class and that class holds the functionality and members of that web page. Separate classes for every individual test.
+
+
+
+
