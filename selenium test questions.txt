@@ -247,6 +247,21 @@ Type of Framework: In our project, we are using Data-driven Framework by using P
 
 POM: As per the Page Object Model, we have maintained a class for every web page. Each web page has a separate class and that class holds the functionality and members of that web page. Separate classes for every individual test.
 
+Reference Links:
+--------------------------
+ How to Install Java:
+ https://www.youtube.com/watch?v=Xly1c...
+
+ How to install Eclipse:
+ https://youtu.be/WIzzHeWukUU
+
+Download Links:
+---------------------------
+1. Java download link (https://www.oracle.com/technetwork/ja...
+2. Eclipse Download (https://www.eclipse.org/downloads/
+3. Selenium Server Standalone jar (http://www.seleniumhq.org/download/
+4. Chrome driver download link (http://chromedriver.chromium.org/down...
+
 
 
 
