@@ -263,5 +263,47 @@ Download Links:
 4. Chrome driver download link (http://chromedriver.chromium.org/down...
 
 
+Java:
+- can you rate yourself in java/testNg/Selenium/Cucumber out of 1 to 10?
+6 In  Java
+- can you tell me OOPS concept and relate it with your framework?
+
+  Polymorphism= Polymorphism in Java is a concept by which we can perform a single action in different ways. ... We can perform polymorphism in java by method overloading and method overriding. 
+  
+  Complie time polymorphism or Method Overloading is A class have mulitple methods with same name but different paramets is called over overloading. For Example, In Implicit wait we use to pass different parameters - seconds, minutes, hrs etc. depending upon the requirement of automation. 
+  
+  Run time polymorphism or Method overriding = Declaring a method in child class which is already present in the parent class is called method overridding. In simple word, Overriding means to override the functionality of an existing method.  
+  
+
+  Inheritance= Extending one class into other class is known as Inheritance or "is a Relationship". Which is achived by the work "Extends". We cannot directly execute "base test" class as there are no rest methods. Hence we extends this base class into all the test cases in the framework. As we know every test methods of TestNG class must use@ Test annotation. THe Name of these methods should shart with test and end with the calss name. upon invoking every test case, corresponding POM class will be invoked with help of aggregation or Has a relationship.
+  
+  Abstraction= Abstraction is a process of hiding the implementation details and showing only functionality to the user. In page object model, desgin we write locators such as id name xpath etc in each page class. We utilize these locator in the pom class but we cant see these locator implementation in the test. 
+
+  Encapsulation=Encapsulation is defined as the wrapping up of data under a single unit. It is the mechanism that binds together code and the data it manipulates. TO relate to Testing or Framework, We set all the instance variables as private so that these private variables cannot be accessed directly by other TestNG classes. THen we generate public getter and setters methods corresponding to this private variables. as we set the variables as private and hide thir implementation from other class, this way we achive encapsulation in our automation framework.
+
+- What is the rule for overriding? ========================
+  
+- How to achieve 100% abstraction in Java? By Using interface we achive, 
+
+- What is Abstract class and how it is different with Interface?=====================
+
+- What do you mean by Static keyword in Java? 
+  It is one of the access modifier, When we specify any variables as static this will remains same for all class. Static method cant be override in child class.
+  It is class level attribute/method. we don't need to create a object to call. we need only class name. 
+  
+- Can we overload main method?=Yes we can
+  
+- Can we override main method?=No, we cannot
+
+- What is Exception in java?= Exceptions are events that occur during the execution of programs that disrupt the normal flow of instructions (e.g. divide by zero, array   access out of bound, etc.). it will throw arthmetic exception. 
+   1. Build in Exception== Checked and Unchecked Exception
+   2. User defined Exception
+ 
+ Runtime Exception or Compile time exception
+
+- What is the difference between throw and throws keyword in java?
+  Throw keyword is used to throw an exception directly. 
+  Throws keyword is used to declare one or more exceptions, separated by commas. Only single exception is thrown by using throw
+
 
 
